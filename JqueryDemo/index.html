@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"> </script>
+      <!-- <script>
+        $(document).ready(function (){
+            $("#btn1").click(function (){
+               $("p").hide(); 
+                
+           });
+         });
+        </script> -->
+
+        <!-- <script>
+        $(document).ready(function (){
+            $("#btn1").click(function (){
+               $("p").css("font-size","30px");
+               $("p").css("color","red");
+                
+           });
+         });
+        </script> -->
+
+    <!-- <style>
+        p{
+            display: none;
+            font-size: 34px;
+            
+        }
+        #btn1{
+             margin: 34px;
+             background-color: black
+             padding: 34px;
+             box-shadow: 23px 34px 9px;
+             border-radius: 112px;
+
+
+        }
+        #btn1:click{
+            box-shadow:30px 40px 9px ;
+            background-color: gray;
+            padding:56px;
+            border-radius: 112px;
+
+        }
+    </style> -->
+</head>
+<body>
+    <button id="btn1"> click me</button>
+    <p> this  is my paragraph </p>
+
+   <script>
+    $.noConflict();
+
+    jQuery("#btn1").click(function(){
+      jQuery("p").text("Text Changed");
+    });
+   </script>
+   
+   <!-- <script>
+    $("#btn1").click(function(){
+        $("p").css({
+        "font-size" :"50px" ,
+        "background-color": "red",
+        "border" : "2px solid black"
+        });
+     });
+   </script> -->
+</body>
+</html>

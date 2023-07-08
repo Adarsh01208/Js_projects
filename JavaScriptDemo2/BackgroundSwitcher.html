@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackkgroundSwithcher</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 20px 100px;
+    }
+
+    h1 {
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+        margin: auto 0px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .btn {
+        width: 20px;
+        height: 20px;
+        border: 1px solid gray;
+        display: inline-block;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    #color_switcher {
+        text-align: right;
+    }
+
+    #white {
+        background-color: white;
+    }
+
+    #aqua {
+        background-color: aqua;
+    }
+
+    #violet {
+        background-color: violet;
+    }
+
+    #red {
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div id="color_switcher">
+        <span class="btn" id="white" onclick="change_bg('#ffffff')"> </span>
+        <span class="btn" id="aqua" onclick="change_bg('#7fffd4')"> </span>
+        <span class="btn" id="violet" onclick="change_bg('#ce9aff')"> </span>
+        <span class="btn" id="red" onclick="change_bg('#000000')"> </span>
+    </div>
+    <h1 class="text ">About Us</h1>
+    <img src="about_us.png" alt="">
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sequi numquam voluptates deserunt harum
+        molestias explicabo consequuntur fugiat, mollitia quis blanditiis eius nihil nostrum eveniet repudiandae ad
+        recusandae, voluptate sapiente reprehenderit nisi hic? Perspiciatis voluptatum fugiat illo officiis blanditiis
+        sint culpa, laudantium quaerat. Ea, at harum quia ipsum ab molestias. Aliquam ad, molestiae fuga quo et
+        accusamus nam error deleniti mollitia delectus quae inventore! Saepe aliquam, iste, sapiente commodi laborum
+        placeat ex eos dignissimos tenetur distinctio architecto voluptatum aliquid vitae illo pariatur consequuntur
+        explicabo. Ab, ea recusandae nostrum, nobis minus sequi corrupti voluptatum doloremque omnis aliquam nisi
+        praesentium suscipit? Quis architecto rerum corporis culpa, necessitatibus maxime facilis reprehenderit. Quo
+        impedit quaerat dicta modi in dolorem animi, beatae nobis numquam quidem, quas, sapiente porro! Eius delectus
+        nobis sint cupiditate minus excepturi, iure id aliquam temporibus dolores blanditiis, vel est iste molestias
+        exercitationem, rerum alias repellat dolorem quas tenetur! Magnam dignissimos, architecto voluptates quos
+        incidunt praesentium minima deleniti culpa explicabo ipsum fugiat amet tempore ad nobis dolores omnis? Natus,
+        quidem ad. Quam harum saepe eum eius a non. Quibusdam illum ad quasi? Eligendi nulla minima delectus ipsum
+        quaerat quam dolor qui maxime, atque sit error voluptatum nemo consectetur rem maiores voluptas quia amet harum
+        omnis ipsa quasi cumque illum consequuntur voluptates. Magni, asperiores laudantium fuga vero quod corporis
+        recusandae eaque! Cupiditate et necessitatibus obcaecati eos, laboriosam nesciunt animi ea iusto ipsum ullam
+        alias nihil, itaque rem, repellendus iure voluptatibus dolor! Maiores sint debitis laboriosam iure maxime
+        officia ex aliquam possimus culpa quas. Quis deleniti quam architecto minus labore suscipit reiciendis ea
+        delectus necessitatibus mollitia nisi nesciunt cumque debitis laborum in ratione, provident deserunt maxime,
+        quibusdam sit numquam qui natus. Quae iusto velit, et reprehenderit ratione eius ipsam? Nulla vel nobis, quo
+        autem impedit adipisci ex eius non, commodi magni hic debitis, dicta provident! Ipsum doloribus, culpa rem,
+        dignissimos, eius alias assumenda illo unde commodi porro consequatur placeat. Repellendus, magnam? Pariatur
+        aliquid dolore, quidem officia, temporibus, quos fuga distinctio illum minus ipsam voluptatem blanditiis in vero
+        accusantium. Dolore sit voluptas facere a, sequi aut ad eveniet soluta impedit debitis ut, similique commodi
+        iusto, nobis cupiditate. Explicabo eligendi nemo repellat fuga reprehenderit amet est delectus beatae quam. Iste
+        sed quis dignissimos corrupti. Nulla similique voluptatum officiis doloribus optio corporis tempora modi quo,
+        magni consequatur quasi voluptate adipisci maiores esse animi cupiditate laboriosam inventore quam, quod, fugit
+        assumenda. Maxime quam nam nobis, recusandae voluptatibus nesciunt velit earum. Obcaecati perspiciatis atque
+        expedita amet excepturi odit totam quae ipsa a perferendis dicta aliquam rerum voluptates labore est iusto
+        libero optio tempore veritatis, exercitationem quos odio, quidem corporis. Explicabo reprehenderit iure a
+        perferendis, rem in consectetur repellat, sunt magni quia aspernatur unde facere tenetur minima cumque ducimus
+        quas quae, quo atque dicta nam? Dolore quisquam aspernatur voluptate rem illum voluptatibus dolores dolor natus
+        fuga quae dignissimos repellendus cupiditate, quia repellat. Repudiandae molestias tenetur dolorem aspernatur
+        fugit tempore commodi, eos et, perferendis non veniam doloremque nostrum rem amet assumenda error ut accusamus
+        ratione necessitatibus. Saepe quae soluta ad commodi?
+    </p>
+
+    <script>
+        function change_bg(color) {
+            document.body.style.backgroundColor = color;
+            let text = document.getElementsByClassName("text");
+            if (color == "#000000") {
+                for (let elm of text) {
+                    elm.style.color = "white";
+                }
+            }
+            else {
+                for (let elm of text) {
+                    elm.style.color = "black";
+                }
+            }
+        }  
+    </script>
+</body>
+
+</html>
